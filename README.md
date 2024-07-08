@@ -18,4 +18,20 @@ gsutil 5.30
 2. Open a new terminal an run `node addReview.js`
    - Note: Feel free to run this multiple times to keep adding random reviews
 3. Run `node expressServer.js`
-4. Open "http://localhost:8081/api/reviews"
+4. Open "http://localhost:8081/api/reviews" or run `curl http://localhost:8081/api/reviews`
+   - Outputs a JSON:
+
+```json
+[
+  {
+    "submittedAt": "2024-07-08T17:46:47.692Z",
+    "submitter": "Alice",
+    "review": "Looks good!"
+  },
+  {
+    "submittedAt": "2024-07-08T17:46:43.667Z",
+    "submitter": "Alice",
+    "review": "Well done!"
+  }
+]
+```
